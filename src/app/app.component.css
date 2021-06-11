@@ -1,0 +1,8 @@
+.app-header {
+  background-color: green;
+  position: fixed;
+  height: 4rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

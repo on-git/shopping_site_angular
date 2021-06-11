@@ -1,0 +1,56 @@
+.cartDetails {
+  padding: 2rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.5rem;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(196, 243, 101);
+}
+
+tr:nth-child(odd) .item-count_button {
+  background-color: rgb(196, 243, 101);
+}
+
+th {
+  background-color: green;
+  color: white;
+}
+
+.item-desc_price {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.item-count_label {
+  padding: 0 1rem;
+  font-size: 1.3rem;
+}
+
+.item-count_button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.item-delete {
+  padding: 0.5rem 0;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.1rem;
+  width: 50px;
+  max-width: 50px;
+  background-color: red;
+}

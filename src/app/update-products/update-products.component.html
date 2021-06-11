@@ -1,0 +1,53 @@
+<div class="updatePage">
+  <button class="item-add" (click)="addNewItem()">Add New Item</button>
+  <div *ngIf="showForm" class="productFormUpdate">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <input
+        type="number"
+        name="productId"
+        [ngModel]="productI"
+        ngModel
+        hidden
+      />
+      <label *ngIf="productNameError" class="errorLabel"
+        >Product Name Required!</label
+      >
+      <label class="formLabel">Product Name:</label>
+      <input
+        class="formInput"
+        type="text"
+        name="productName"
+        [ngModel]="productN"
+        #name="ngModel"
+        ngModel
+        required
+      />
+      <label *ngIf="productPriceError" class="errorLabel"
+        >Product Price Required!</label
+      >
+      <label class="formLabel">Product Price:</label>
+      <input
+        class="formInput"
+        type="number"
+        name="price"
+        [ngModel]="productP"
+        #price="ngModel"
+        ngModel
+        min="0"
+        required
+      />
+      <button class="formButton" type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="item-list">
+    <div *ngFor="let item of itemArray; let i = index" class="item-card">
+      <div class="item-desc">
+        <label class="item-desc_name">{{ item.name }}</label>
+      </div>
+      <label class="item-desc_price">{{ item.price | currency }}</label>
+      <button class="item-add" (click)="updateItem(item)">Update</button>
+      <button class="item-delete" (click)="removeItem(i)">X</button>
+    </div>
+  </div>
+</div>

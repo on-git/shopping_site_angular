@@ -1,0 +1,28 @@
+<div class="cartDetails">
+  <table>
+    <thead>
+      <th>Item</th>
+      <th>Count</th>
+      <th>Price</th>
+      <th></th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of shoppingList; let i = index">
+        <td>{{ item.name }}</td>
+        <td>
+          <button class="item-count_button" (click)="countDecr(item)">-</button>
+          <label class="item-count_label">{{ item.count }}</label>
+          <button class="item-count_button" (click)="countInc(item)">+</button>
+        </td>
+        <td>
+          <label class="item-desc_price">{{
+            item.price * item.count | currency
+          }}</label>
+        </td>
+        <td>
+          <button class="item-delete" (click)="removeItem(i)">X</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

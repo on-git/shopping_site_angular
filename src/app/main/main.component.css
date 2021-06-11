@@ -1,0 +1,72 @@
+.app-main {
+  height: 100%;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-card {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 0 5px;
+}
+
+.item-desc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.item-desc_name {
+  font-size: 1.5rem;
+}
+
+.item-desc_price {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0 2rem;
+}
+
+.item-count {
+  width: 100%;
+  padding-top: 0.5rem;
+}
+
+.item-count_label {
+  padding: 0 1rem;
+  font-size: 1.3rem;
+}
+
+.item-count_button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.item-add {
+  width: 100%;
+  max-width: 150px;
+  padding: 1rem 0;
+  border: none;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.item-add:active,
+.item-add:hover {
+  background-color: rgb(196, 243, 101);
+  color: black;
+}

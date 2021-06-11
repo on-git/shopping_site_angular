@@ -1,0 +1,135 @@
+.updatePage {
+  padding: 1rem 2rem;
+}
+
+.item-add {
+  width: 100%;
+  max-width: 150px;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.productFormUpdate {
+  padding: 2rem;
+  width: 30rem;
+}
+
+.formLabel,
+.formInput {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.formInput {
+  border: 2px solid green;
+  padding: 0.2rem 0.5rem;
+}
+
+.errorLabel {
+  color: red;
+}
+
+.formLabel {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: green;
+}
+
+.formButton {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.item-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-card {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 0 5px;
+}
+
+.item-desc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.item-desc_name {
+  font-size: 1.5rem;
+}
+
+.item-desc_price {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0 2rem;
+}
+
+.item-count {
+  width: 100%;
+  padding-top: 0.5rem;
+}
+
+.item-count_label {
+  padding: 0 1rem;
+  font-size: 1.3rem;
+}
+
+.item-count_button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.item-add,
+.item-delete {
+  padding: 1rem 0;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.item-add {
+  width: 100%;
+  max-width: 150px;
+  background-color: green;
+}
+
+.item-delete {
+  margin-left: 1rem;
+  width: 100px;
+  max-width: 100px;
+  background-color: red;
+}
+
+.item-add:active,
+.item-add:hover {
+  background-color: rgb(196, 243, 101);
+  color: black;
+}
+
+.item-delete:active,
+.item-delete:hover {
+  background-color: rgb(252, 102, 102);
+  color: black;
+}

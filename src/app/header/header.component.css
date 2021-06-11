@@ -1,0 +1,36 @@
+.nav-bar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.nav-bar-title {
+  font-size: 2rem;
+  color: white;
+}
+
+.nav-bar-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.nav-bar-list_item {
+  list-style-type: none;
+  margin-left: 2rem;
+}
+
+.nav-bar-list_item_link {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.nav-bar-list_item_link:hover,
+.nav-bar-list_item_link:active {
+  border-bottom: 5px solid white;
+}
